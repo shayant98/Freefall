@@ -59,10 +59,10 @@
 <body>
     <?php
 
-include "header.php";
+include "includes/header.php";
 
 ?>
-<?php include "footer.php";
+<?php include "includes/footer.php";
 ?>
 </body>
 <!-- Vendor -->
