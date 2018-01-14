@@ -138,7 +138,7 @@
 				<div class="container">
 
 				</div>
-				<!-- <div class="footer-copyright"> -->
+<div class="footer-copyright">
 					<div class="container">
 						<div class="row">
 							<!-- <div class="col-md-1">
@@ -153,7 +153,7 @@
 
 						</div>
 					</div>
-				<!-- </div> -->
+				</div>
 			</footer>
 
 

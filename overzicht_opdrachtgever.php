@@ -61,8 +61,8 @@
   ?>
 
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
+    <div class="row ">
+      <div class="col-md-12 ">
         <div class="featured-boxes featured-boxes-style-8">
           <div class="row">
             <div class="col-md-5">
@@ -115,7 +115,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
               <div class="featured-box featured-box-primary featured-box-text-left">
                 <div class="box-content">
                   <div class="row">
@@ -131,11 +131,13 @@
 														<hr>
 													</div>
                   </div>
-
                   <div class="row">
-                    <div class="col-md-12">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet.</p>
-                      <button class="btn btn-lg btn-primary mr-xs mb-lg" type="button">Learn More</button>
+                    <div class="col-md-6">
+                        <label>Salary</label>
+                    </div>
+                    <div class="col-md-6">
+                      <p><i class="fa fa-usd" aria-hidden="true"></i>
+                        <?php echo $_SESSION['u_salary']; ?></p>
                     </div>
                   </div>
                 </div>
@@ -147,18 +149,17 @@
                   <div class="box-content">
                     <div class="row">
                       <div class="col-md-9">
-                        <h2>Loved by Customers</h2>
+                        <h2>Updates</h2>
                       </div>
                       <div class="col-md-3">
                         <div class="align-right">
-                          <i class="icon-featured fa fa-user"></i>
+                          <i class="icon-featured fa fa-info-circle"></i>
                         </div>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-md-12">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet.</p>
-                        <button class="btn btn-lg btn-primary mr-xs mb-lg" type="button">Learn More</button>
+                        <p>System Updates Hier!</p>
                       </div>
                     </div>
                   </div>
