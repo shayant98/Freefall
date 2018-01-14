@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title>Porto - Responsive HTML5 Template 5.7.2</title>
+		<title>Freefall</title>
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -15,7 +14,7 @@
 
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+		<link rel="apple-touch-icon" href="img/apple-touch-icon1.png">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -55,6 +54,26 @@
 
 	</head>
 <body>
+
+
+	<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 140, 'stickySetTop': '-140px'}">
+		<div class="header">
+
+			<div class="header-container container">
+				<div class="header-row">
+					<div class="header-column header-column-center">
+						<div class="header-logo">
+							<a href="index.html">
+								<img alt="Porto" width="222" height="108" src="img/logo_freefall.png">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</header>
+
     	<div role="main" class="main shop">
 
 				<div class="container">
@@ -74,27 +93,29 @@
 									<div class="col-sm-6">
 										<div class="featured-box featured-box-primary align-left mt-xlg">
 											<div class="box-content">
-												<h4 class="heading-primary text-uppercase mb-md">I'm a Returning Customer</h4>
+												<h4 class="heading-primary text-uppercase mb-md">Welkom bij Freefall</h4>
 												<form action="api/login_process.php" id="frmSignIn" method="post">
 													<div class="row">
 														<div class="form-group">
 															<div class="col-md-12">
-																<label>Username</label>
-																<input type="text" name="username" class="form-control input-lg">
+																<label>Email</label>
+																<input type="text" name="username" class="form-control input-lg" placeholder="Email Address">
 															</div>
 														</div>
 													</div>
 													<div class="row">
 														<div class="form-group">
 															<div class="col-md-12">
-																<label>Password</label>
-																<input type="password" name="password" class="form-control input-lg">
+																<label>Wachtwoord</label>
+																<input type="password" name="password" class="form-control input-lg" placeholder="Wachtwoord">
 															</div>
 														</div>
 													</div>
 													<div class="row">
+<div class="col-md-10">
 
-														<div class="col-md-6">
+</div>
+														<div class="col-md-2">
 															<input type="submit" value="Login" name="submit" class="btn btn-primary pull-right mb-xl">
 														</div>
 													</div>
@@ -112,6 +133,30 @@
 				</div>
 
 			</div>
+
+			<footer id="footer">
+				<div class="container">
+
+				</div>
+				<!-- <div class="footer-copyright"> -->
+					<div class="container">
+						<div class="row">
+							<!-- <div class="col-md-1">
+								<a href="index.html" class="logo">
+									<img alt="Porto Website Template" class="img-responsive" src="img/logo-footer.png">
+								</a>
+							</div> -->
+							<div class="col-md-7">
+
+								<p>© Copyright 2018. All Rights Reserved.</p>
+							</div>
+
+						</div>
+					</div>
+				<!-- </div> -->
+			</footer>
+
+
 </body>
 <!-- Vendor -->
 		<script src="vendor/jquery/jquery.min.js"></script>
@@ -149,10 +194,12 @@
 
 		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
 		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			(function(i,s,o,g,r,a,m) {
+  i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)
+},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 			ga('create', 'UA-12345678-1', 'auto');
 			ga('send', 'pageview');
