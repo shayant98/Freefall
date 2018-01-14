@@ -65,37 +65,49 @@
       <div class="col-md-12">
         <div class="featured-boxes featured-boxes-style-8">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-5">
               <div class="featured-box featured-box-primary featured-box-text-left">
                 <div class="box-content">
                   <div class="row">
                     <div class="col-md-9">
                       <h2>Welkom <?php echo $_SESSION['u_username']; ?></h2>
                     </div>
+
                     <div class="col-md-3">
                       <div class="align-right">
                         <i class="icon-featured fa fa-user"></i>
                       </div>
                     </div>
-										<div class="col-md-6">
-                      <div class="align-left">
-                        <img src="img/clients/client-1.jpg" alt="">
-                      </div>
-                    </div>
-										<div class="col-md-6">
-                      <label>Naam</label>
-                      <p> <?php echo  $_SESSION['u_first'] ; ?></p>
-                    </div>
+										<div class="divider">
+													<hr>
+												</div>
 										<div class="row">
 											<div class="col-md-6">
-	                      <label>Achternaam</label>
-	                      <p> <?php echo  $_SESSION['u_last'] ; ?></p>
+	                      <div class="align-left">
+	                        <img src="img/clients/client-1.jpg" alt="">
+	                      </div>
 	                    </div>
-											<div class="col-md-6 pull-right">
-	                      <label>Functie</label>
-	                      <p> <?php echo  $_SESSION['u_level'] ; ?></p>
+
+											<div class="col-md-6">
+	                      <label>Naam</label>
+	                      <p> <?php echo  $_SESSION['u_first'] ; ?></p>
 	                    </div>
+											<div class="row">
+												<div class="col-md-6">
+		                      <label>Achternaam</label>
+		                      <p> <?php echo  $_SESSION['u_last'] ; ?></p>
+		                    </div>
+												<div class="col-md-6 pull-right">
+		                      <label>Functie</label>
+		                      <p> <?php if ($_SESSION['u_level'] == '1') {
+							              echo 'opdrachtgever';
+							            }else {
+							              echo 'hey';
+							            } ; ?></p>
+		                    </div>
+											</div>
 										</div>
+
                   </div>
 
 
@@ -108,14 +120,18 @@
                 <div class="box-content">
                   <div class="row">
                     <div class="col-md-9">
-                      <h2>Loved by Customers</h2>
+                      <h2>Salaris</h2>
                     </div>
                     <div class="col-md-3">
                       <div class="align-right">
-                        <i class="icon-featured fa fa-user"></i>
+                        <i class="icon-featured fa fa-money"></i>
                       </div>
                     </div>
+										<div class="divider ">
+														<hr>
+													</div>
                   </div>
+
                   <div class="row">
                     <div class="col-md-12">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet.</p>
