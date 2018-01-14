@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>overzicht_freelancer</title>
+    <title>Freelancer</title>
 
     <meta name="keywords" content="HTML5 Template" />
     <meta name="description" content="Porto - Responsive HTML5 Template">
@@ -65,45 +65,82 @@
       <div class="col-md-12">
         <div class="featured-boxes featured-boxes-style-8">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-5">
               <div class="featured-box featured-box-primary featured-box-text-left">
                 <div class="box-content">
                   <div class="row">
                     <div class="col-md-9">
-                      <h2>Loved by Customers</h2>
+                      <h2>Welkom <?php echo $_SESSION['u_username']; ?></h2>
                     </div>
+
                     <div class="col-md-3">
                       <div class="align-right">
                         <i class="icon-featured fa fa-user"></i>
                       </div>
                     </div>
+										<div class="divider">
+													<hr>
+												</div>
+										<div class="row">
+											<div class="col-md-6">
+	                      <div class="align-left">
+	                        <img src="img/clients/client-1.jpg" alt="">
+	                      </div>
+	                    </div>
+
+											<div class="col-md-6">
+	                      <label>Naam</label>
+	                      <p> <?php echo  $_SESSION['u_first'] ; ?></p>
+	                    </div>
+											<div class="row">
+												<div class="col-md-6">
+		                      <label>Achternaam</label>
+		                      <p> <?php echo  $_SESSION['u_last'] ; ?></p>
+		                    </div>
+												<div class="col-md-6 pull-right">
+		                      <label>Functie</label>
+		                      <p> <?php if ($_SESSION['u_level'] == '1') {
+							              echo 'opdrachtgever';
+							            }else {
+							              echo 'freelancer';
+							            } ; ?></p>
+		                    </div>
+											</div>
+										</div>
+
                   </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet.</p>
-                      <button class="btn btn-lg btn-primary mr-xs mb-lg" type="button">Learn More</button>
-                    </div>
-                  </div>
+
+
+
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
               <div class="featured-box featured-box-primary featured-box-text-left">
                 <div class="box-content">
                   <div class="row">
                     <div class="col-md-9">
-                      <h2>Loved by Customers</h2>
+                      <h2>Salaris</h2>
                     </div>
                     <div class="col-md-3">
                       <div class="align-right">
-                        <i class="icon-featured fa fa-user"></i>
+                        <i class="icon-featured fa fa-money"></i>
                       </div>
                     </div>
+										<div class="divider ">
+														<hr>
+													</div>
                   </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet.</p>
-                      <button class="btn btn-lg btn-primary mr-xs mb-lg" type="button">Learn More</button>
+
+                  <div class="row ">
+
+                    <div class="col-md-6">
+                      <label> Salaris</label>
+
+                    </div>
+                    <div class="col-md-6 pull-right">
+                      <p><i class="fa fa-usd" aria-hidden="true"></i>
+                        <?php echo $_SESSION['u_salary']; ?></p>
                     </div>
                   </div>
                 </div>
@@ -115,18 +152,18 @@
                   <div class="box-content">
                     <div class="row">
                       <div class="col-md-9">
-                        <h2>Loved by Customers</h2>
+                        <h2>Updates</h2>
                       </div>
                       <div class="col-md-3">
                         <div class="align-right">
-                          <i class="icon-featured fa fa-user"></i>
+                          <i class="icon-featured fa fa-info-circle "></i>
                         </div>
                       </div>
                     </div>
+                    <hr>
                     <div class="row">
                       <div class="col-md-12">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet.</p>
-                        <button class="btn btn-lg btn-primary mr-xs mb-lg" type="button">Learn More</button>
+                        <p>System updates hier!</p>
                       </div>
                     </div>
                   </div>

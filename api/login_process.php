@@ -34,12 +34,8 @@ session_start();
             $_SESSION['u_last'] = $row['surname'];
             $_SESSION['u_email'] = $row['email'];
             $_SESSION['u_username'] = $row['username'];
-            if ($row['access_level'] == '1') {
-              $_SESSION['u_level'] = 'opdrachtgever';
-            }else {
-              $_SESSION['u_level'] = 'freelancer';
-            }
-
+            $_SESSION['u_salary'] = $row['salary'];
+            $_SESSION['u_level'] = $row['access_level'];
 
             if ($row['access_level'] == 1) {
               header("Location: ../overzicht_opdrachtgever.php");

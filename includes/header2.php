@@ -23,12 +23,12 @@ session_start();
 												<ul class="nav nav-pills" id="mainNav">
 
 													<li class="">
-														<a href="home.php">
+														<a href="overzicht_opdrachtgever.php">
 															Overzicht
 														</a>
 													</li>
                                                         <li class="">
-														<a href="#">
+														<a href="overzicht-projecten_opdrachtgever.php">
 															Mijn Projecten
 														</a>
 													</li>

@@ -102,7 +102,7 @@
 		                      <p> <?php if ($_SESSION['u_level'] == '1') {
 							              echo 'opdrachtgever';
 							            }else {
-							              echo 'hey';
+							              echo 'freelancer';
 							            } ; ?></p>
 		                    </div>
 											</div>
