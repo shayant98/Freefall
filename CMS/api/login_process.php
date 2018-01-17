@@ -9,7 +9,7 @@ session_start();
      $password = mysqli_real_escape_string($conn, $_POST['password']);
 
 
-    //Error Handler
+    //Error Handlers
     if (empty($username) || empty($password)) {
       header("Location: ../index.php?login=empty");
       exit();
