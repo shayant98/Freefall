@@ -12,7 +12,7 @@
 					<p>Please wait...</p>
 				</div>
 			</div> -->
-			<div class="col-md-8">
+			<!-- <div class="col-md-3">
 				<h5 class="mb-sm">Call Us</h5>
 				<span class="phone">(800) 123-4567</span>
 				<p class="mb-none">International: (333) 456-6670</p>
@@ -25,10 +25,9 @@
 					<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
 					<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
 				</ul>
-			</div>
-			<div class="col-md-4">
-				<h4 class="mb-none">Contact Us</h4>
-				<p>Contact us or give us a call to discover how we can help.</p>
+			</div> -->
+			<!-- <div class="col-md-4">
+				<h4 class="mb-none">Contact ons</h4>
 				<form id="contactForm" action="php/contact-form.php" method="POST">
 					<input type="hidden" value="Contact Form" name="subject" id="subject">
 					<div class="row">
@@ -66,7 +65,7 @@
 						</div>
 					</div>
 				</form>
-			</div>
+			</div> -->
 		</div>
 	</div>
 	<div class="footer-copyright">
@@ -74,12 +73,52 @@
 			<div class="row">
 				<div class="col-md-1">
 					<a href="index.html" class="logo">
-						<img alt="Porto Website Template" class="img-responsive" src="img/logo-footer.png">
+						<img alt="Porto Website Template" class="img-responsive" src="img/logo_freefall_white.png" width="222" height="71">
 					</a>
 				</div>
-				<div class="col-md-11">
+				<div class="col-md-10">
 					<p>© Copyright 2017. All Rights Reserved.</p>
 				</div>
+				<!-- <div class="col-md-">
+				</div> -->
+				<div class="col-md-1">
+					<button type="button" class="btn btn-primary mb xl" data-toggle="modal" data-target="#myModal">Contact</button>
+				</div>
+
+
+
+			<!-- Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+			    <!-- Modal content-->
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal">&times;</button>
+			        <h4 class="modal-title">Contact ons.</h4>
+			      </div>
+			      <div class="modal-body">
+			        <!-- <p>Some text in the modal.</p> -->
+							<label>Naam</label>
+							<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required>
+
+							<label>Email</label>
+							<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
+
+							<label>Bericht</label>
+							<textarea maxlength="5000" data-msg-required="Please enter your message." rows="4" class="form-control" name="message" id="message" required></textarea>
+								<br>
+								<input type="submit" value="Versturen" class="btn btn-primary mb-xl" data-loading-text="Loading...">
+
+					  </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+
+			  </div>
+			</div>
+
 			</div>
 		</div>
 	</div>
