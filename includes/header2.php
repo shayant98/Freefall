@@ -56,7 +56,7 @@ session_start();
 													</li>
 
 												    <li class="">
-												    <a><i class="fa fa-sign-out fa-2x" aria-hidden="true" style="font-size: 21px;"></i>
+												    <a href="api/logout_process.php"><i class="fa fa-sign-out fa-2x" aria-hidden="true" style="font-size: 21px;"></i>
 												    </a>
 
 													</li>

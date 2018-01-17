@@ -56,23 +56,7 @@
 <body>
 
 
-	<!-- <header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 140, 'stickySetTop': '-140px'}">
-		<div class="header">
 
-			<!-- <div class="header-container container">
-				<div class="header-row">
-					<div class="header-column header-column-center">
-						<div class="header-logo">
-							<a href="index.html">
-								<img alt="Porto" width="222" height="108" src="img/logo_freefall.png">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div> -->
-
-		<!-- </div>
-	</header> --> -->
 
     	<div role="main" class="main shop">
 
