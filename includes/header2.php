@@ -7,7 +7,7 @@ session_start();
 						<div class="header-row">
 							<div class="header-column">
 								<div class="header-logo">
-									<a href="index.html">
+									<a href="index.php">
 										<img alt="Porto" width="111" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="img/logo_freefall.png">
 									</a>
 								</div>
