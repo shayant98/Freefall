@@ -56,10 +56,10 @@
 <body>
 
 
-	<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 140, 'stickySetTop': '-140px'}">
+	<!-- <header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 140, 'stickySetTop': '-140px'}">
 		<div class="header">
 
-			<div class="header-container container">
+			<!-- <div class="header-container container">
 				<div class="header-row">
 					<div class="header-column header-column-center">
 						<div class="header-logo">
@@ -69,10 +69,10 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
-		</div>
-	</header>
+		<!-- </div>
+	</header> --> -->
 
     	<div role="main" class="main shop">
 
@@ -93,7 +93,15 @@
 									<div class="col-sm-6">
 										<div class="featured-box featured-box-primary align-left mt-xlg">
 											<div class="box-content">
+												<div class="col-sm-6">
 												<h4 class="heading-primary text-uppercase mb-md">Welkom bij Freefall</h4>
+												</div>
+												<div class="col-sm-1">
+													<img src="img/logo_freefall2.png" alt="Freefall" width="133" height="45">
+												</div>
+												<!-- <div class="col-sm-3">
+
+												</div> -->
 												<form action="api/login_process.php" id="frmSignIn" method="post">
 													<div class="row">
 														<div class="form-group">
@@ -134,27 +142,7 @@
 
 			</div>
 
-			<footer id="footer">
-				<div class="container">
 
-				</div>
-<div class="footer-copyright">
-					<div class="container">
-						<div class="row">
-							<!-- <div class="col-md-1">
-								<a href="index.html" class="logo">
-									<img alt="Porto Website Template" class="img-responsive" src="img/logo-footer.png">
-								</a>
-							</div> -->
-							<div class="col-md-7">
-
-								<p>© Copyright 2018. All Rights Reserved.</p>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</footer>
 
 
 </body>
