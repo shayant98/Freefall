@@ -53,15 +53,22 @@
 		<script src="vendor/modernizr/modernizr.min.js"></script>
 
 	</head>
+	<style>
+body  {
+    background-image: url("img/bg-img2.png");
+    background-color: #cccccc;
+}
+</style>
 <body>
 
 
-
+	<div class="container">
 
     	<div role="main" class="main shop">
 
-				<div class="container">
 
+
+					<div id="cbp-bicontroles" class="cbp-bislideshow"
 					<div class="row">
 						<div class="col-md-12">
 							<hr class="tall">
@@ -125,6 +132,8 @@
 				</div>
 
 			</div>
+
+
 
 
 
