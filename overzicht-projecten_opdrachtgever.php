@@ -166,6 +166,10 @@
 <script>
 $(document).ready(function() {
   $('table').dataTable( {
+    rowGroup: {
+        // Group by Status
+        dataSrc: 6
+    },
   "createdRow": function( row, data, dataIndex ) {
     if ( data[8] == '' ) {
       $(row).addClass( 'info' );
