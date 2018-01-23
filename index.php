@@ -57,9 +57,6 @@
 body  {
     background-image: url("img/bg-img2.png");
     background-color: #cccccc;
-
-
-
 }
 </style>
 <body>
@@ -134,22 +131,8 @@ body  {
 
 				</div>
 
-<div class="reveal-text" style="position: absolute; left: 25%;
-    right: 25%; display: block; overflow: visible;">
+			</div>
 
-	<h1 class="tp-caption tp-caption-photo-label tp-caption-main-custom tp-static-layer font-weight-bold text-color-dark"
-	data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-start="500" data-basealign="slide" data-startslide="0"
-	data-endslide="99" data-transform_in="y:[-300%];opacity:0;s:500;" style="font-size: 40px; font-style: italic; font-family:calibri;  visibility: inherit; transition: background-color 0.5s
-	ease 0.5s; text-align: center; line-height: 41px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: -2px; font-weight:
-	 700; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.5; transform: translate3d(0px, 0px,
-	  0px); transform-origin: 50% 50% 0px;" id="layer-320358480">We bring work to life.</h1></div>
-
-
-
-
-		<!-- <h1 class="reveal-text">
-			We bring work to life.
-		</h1> -->
 
 
 
