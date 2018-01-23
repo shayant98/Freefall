@@ -34,7 +34,9 @@ session_start();
 													</li>
 
 												    <li class="no-active">
-														<button type="button" class="btn btn-3d btn-primary mr-xs mb-sm">Kies een Project</button></a>
+                              <a class="btn btn-3d btn-primary mr-xs mb-sm" href="projecten_freelancer.php">Kies een Project</a>
+
+                              </form>
 													</li>
 
 
