@@ -94,28 +94,27 @@ include "includes/header.php";
            $price = $row['project_price'];
            $deadline = $row['project_deadline'];
            ?>
-
-             <li class="col-md-3 col-sm-6 col-xs-12 isotope-item <?php echo $row['project_tags']; ?>">
-               <div class="portfolio-item">
-                 <a href="portfolio-single-small-slider.html">
-                   <span class="thumb-info thumb-info-lighten">
-                     <span class="thumb-info-wrapper">
-                       <img src="img/projects/project.jpg" class="img-responsive" alt="">
-                       <span class="thumb-info-title">
-                         <span class="thumb-info-inner"><?php echo $name ?></span>
-                         <span class="thumb-info-type"><?php echo $u_name ?></span>
-                       </span>
-                       <span class="thumb-info-action">
-                         <span class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
-                       </span>
-                     </span>
+           <li class="col-md-3 col-sm-6 col-xs-12 isotope-item <?php echo $row['project_tags']; ?>">
+             <span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
+               <span class="thumb-info-wrapper">
+                 <a href="about-me.html">
+                   <img src="img/team/team-1.jpg" class="img-responsive" alt="">
+                   <span class="thumb-info-title">
+                     <span class="thumb-info-inner"><?php echo $name ?></span>
+                     <span class="thumb-info-type"><?php echo $u_name ?></span>
                    </span>
                  </a>
-               </div>
-             </li>
-
-
-
+               </span>
+               <span class="thumb-info-caption">
+                 <span class="thumb-info-caption-text"><?php echo $disc ?></span>
+                 <span class="thumb-info-social-icons">
+                   <a href="#" data-toggle="tooltip" title=<?php echo $price ?>><i class="fa fa-money"></i><span>Budget</span></a>
+                   <a href="#" data-toggle="tooltip" title=<?php echo $u_name ?>><i class="fa fa-user"></i><span>Opdrachtgever</span></a>
+                   <a href="#" data-toggle="tooltip" title=<?php echo $deadline ?>><i class="fa fa-calendar-o"></i><span>Deadline</span></a>
+                 </span>
+               </span>
+             </span>
+           </li>
 
 
            <?php
@@ -164,15 +163,9 @@ include "includes/header.php";
 		<!-- Examples -->
 		<script src="js/examples/examples.demos.js"></script>
 
-		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-12345678-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-		 -->
+    <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
 </html>

@@ -34,7 +34,7 @@ session_start();
 													</li>
 
 												    <li class="no-active">
-                              <a class="btn btn-3d btn-primary mr-xs mb-sm" href="projecten_freelancer.php">Kies een Project</a>
+                              <a class="btn btn-3d btn-primary mr-xs mb-sm" href="projecten_overzicht.php">Kies een Project</a>
 
                               </form>
 													</li>
