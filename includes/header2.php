@@ -7,7 +7,7 @@ session_start();
 						<div class="header-row">
 							<div class="header-column">
 								<div class="header-logo">
-									<a href="index.php">
+									<a href="overzicht_opdrachtgever.php">
 										<img alt="Porto" width="111" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="img/logo_freefall.png">
 									</a>
 								</div>
@@ -34,7 +34,7 @@ session_start();
 													</li>
 
 												    <li class="no-active">
-														<button type="button" class="btn btn-3d btn-primary mr-xs mb-sm">Maak een Project</button></a>
+<a class="btn btn-3d btn-primary mr-xs mb-sm" href="nieuwe_project.php">Maak een Project</a>
 													</li>
 
 
