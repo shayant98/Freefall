@@ -1,3 +1,17 @@
+<?php
+
+	$name = "hello";
+
+	if(isset($_POST['id'])){
+		$userResponsePHP = 'number';
+	}else {
+		$userResponsePHP = 'string';
+	}
+
+
+
+
+ ?>
 <div class="ajax-container">
 	<div class="row">
 		<div class="col-md-12">
@@ -7,7 +21,7 @@
 						<a href="#" data-ajax-portfolio-close data-tooltip data-original-title="Close"><i class="fa fa-th"></i></a>
 					</div>
 					<div class="col-md-10 center">
-						<h2 class="mb-none">Presentation</h2>
+						<h2 class="mb-none"><?php echo $_POST['id'] ?></h2>
 					</div>
 					<div class="portfolio-nav col-md-1">
 						<a href="#" data-ajax-portfolio-prev class="portfolio-nav-prev" data-tooltip data-original-title="Previous"><i class="fa fa-chevron-left"></i></a>
@@ -36,10 +50,10 @@
 					<div class="col-md-12 center">
 						<ul>
 							<li>
-								<a href="#" data-tooltip data-original-title="Like"><i class="fa fa-heart"></i>14</a>
+								<a href="#" data-tooltip data-original-title="Like"><i class="fa fa-heart"></i><?php echo $id; ?></a>
 							</li>
 							<li>
-								<i class="fa fa-calendar"></i> 01 January 2017
+								<i class="fa fa-calendar"></i> <?php  ?>
 							</li>
 							<li>
 								<i class="fa fa-tags"></i> <a href="#">Brand</a>, <a href="#">Design</a>
