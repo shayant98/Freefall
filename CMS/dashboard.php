@@ -52,7 +52,7 @@
                     <a href="projecten.php"><i class="fa fa-list"></i> <span class="nav-label">Projecten</span></a>
                 </li>
                 <li>
-                    <a href="posts.php"><i class="fa fa-file"></i> <span class="nav-label">Posts</span></a>
+                    <a href="posts.php"><i class="fa fa-clipboard"></i> <span class="nav-label">Posts</span></a>
                 </li>
 
                 <li>
