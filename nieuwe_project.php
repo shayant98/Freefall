@@ -39,7 +39,7 @@
 		<link rel="stylesheet" href="css/theme-elements.css">
 		<link rel="stylesheet" href="css/theme-blog.css">
 		<link rel="stylesheet" href="css/theme-shop.css">
-
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 		<!-- Current Page CSS -->
 		<link rel="stylesheet" href="vendor/rs-plugin/css/settings.css">
 		<link rel="stylesheet" href="vendor/rs-plugin/css/layers.css">
@@ -59,7 +59,7 @@
 <body>
     <?php
 
-include "includes/header.php";
+include "includes/header2.php";
 
 
 
@@ -93,8 +93,16 @@ include "includes/header.php";
 						<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="project_name" id="name" required>
 				</div>
 				<div class="col-md-8">
-					<label>Vereiste Vaardigheden</label>
-					<input type="text" value="" maxlength="100" class="form-control" name="project_tags" required>
+					<label for="id_label_single">
+							Vereiste vaardigheden
+<br>
+  <select class="js-example-basic-single  form-control" id="id_label_single">
+  	<option value="website">Website</option>
+		<option value="logo">Logo</option>
+  </select>
+</label>
+
+
 				</div>
 
 			</div>
@@ -136,6 +144,7 @@ include "includes/header.php";
 </body>
 <!-- Vendor -->
 		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 		<script src="vendor/jquery.appear/jquery.appear.min.js"></script>
 		<script src="vendor/jquery.easing/jquery.easing.min.js"></script>
 		<script src="vendor/jquery-cookie/jquery-cookie.min.js"></script>
@@ -179,4 +188,11 @@ include "includes/header.php";
 			ga('send', 'pageview');
 		</script>
 		 -->
+		 <script>
+		 // In your Javascript (external .js resource or <script> tag)
+$(document).ready(function() {
+	 $('.js-example-basic-single').select2();
+	 placeholder: 'Select an option'
+});
+		 </script>
 </html>
