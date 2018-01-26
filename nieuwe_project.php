@@ -64,21 +64,37 @@ include "includes/header.php";
 
 
 ?>
-<br>
-<br>
+
+<section class="page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="breadcrumb">
+					<li><a href="#">Overzicht </a></li>
+					<li class="active">Maak een Project</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Nieuwe Project</h1>
+			</div>
+		</div>
+	</div>
+</section>
 <div class="container">
 
 
-	<form id="contactForm" action="php/contact-form.php" method="POST">
+	<form action="api/addProject_process.php" method="POST">
 		<div class="row">
 			<div class="form-group">
 				<div class="col-md-4">
 					<label>Project Naam</label>
-					<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required>
+						<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="project_name" id="name" required>
 				</div>
 				<div class="col-md-8">
 					<label>Vereiste Vaardigheden</label>
-					<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
+					<input type="text" value="" maxlength="100" class="form-control" name="project_tags" required>
 				</div>
 
 			</div>
@@ -87,12 +103,12 @@ include "includes/header.php";
 			<div class="form-group">
 				<div class="col-md-4">
 					<label>Budget</label>
-					<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject" required>
+					<input type="number" value="" class="form-control" name="project_price" required>
 				</div>
 
 				<div class="col-md-8">
 					<label>Project omschrijving</label>
-					<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message" required></textarea>
+					<textarea maxlength="5000" rows="10" class="form-control" name="project_disc" required></textarea>
 				</div>
 			</div>
 		</div>
@@ -106,7 +122,7 @@ include "includes/header.php";
 
 </div>
 			<div class="col-md-1">
-				<input type="submit" value="Maak Project" class="btn btn-primary btn-lg mb-xlg" data-loading-text="Loading...">
+				<input type="submit" name="submitProject" value="Maak Project" class="btn btn-primary btn-lg mb-xlg" data-loading-text="Loading...">
 			</div>
 
 		</div>
