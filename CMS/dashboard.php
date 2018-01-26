@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INSPINIA | Dashboard v.4</title>
+    <title>Freefall | CMS</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -25,10 +25,10 @@
         <div class="sidebar-collapse">
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
-                    <!-- <div class="dropdown profile-element"> <span>
-                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image"  src="../img/logo_freefall_white2.png" style="width:130px;height:64px;" />
                              </span>
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <!-- <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
                              </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
@@ -37,10 +37,10 @@
                             <li><a href="mailbox.html">Mailbox</a></li>
                             <li class="divider"></li>
                             <li><a href="login.html">Logout</a></li>
-                        </ul>
-                    </div> -->
+                        </ul> -->
+                    </div>
                     <div class="logo-element">
-                        IN+
+                        <img alt="image"  src="../img/logo_element.png" style="width:40px;height: 40px;" />
                     </div>
                 </li>
 
@@ -329,12 +329,41 @@
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
                         <!-- <span class="label label-success pull-right">Monthly</span> -->
-                        <h5>Gebruikers</h5>
+                        <h1>Gebruikers</h1>
                     </div>
                     <div class="ibox-content">
-                        <h1 class="no-margins">386,200</h1>
-                        <div class="stat-percent font-bold text-success">98% <i class="fa fa-bolt"></i></div>
-                        <small>Total views</small>
+
+                        <h3 class="no-margins">386,200</h3>
+                        <!-- <div class="stat-percent font-bold text-success">98% <i class="fa fa-bolt"></i></div>
+                        <small>Total views</small> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <!-- <span class="label label-success pull-right">Monthly</span> -->
+                        <h1>Online Gebruikers</h1>
+                    </div>
+                    <div class="ibox-content">
+                        <h3 class="no-margins">386,200</h3>
+                        <!-- <div class="stat-percent font-bold text-success">98% <i class="fa fa-bolt"></i></div> -->
+                        <!-- <small>Total views</small> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <!-- <span class="label label-success pull-right">Monthly</span> -->
+                        <h1>Active Projecten</h1>
+                    </div>
+                    <div class="ibox-content">
+                        <h3 class="no-margins">386,200</h3>
+                        <!-- <div class="stat-percent font-bold text-success">98% <i class="fa fa-bolt"></i></div> -->
+                        <!-- <small>Total views</small> -->
                     </div>
                 </div>
             </div>
@@ -741,7 +770,10 @@
                 10GB of <strong>250GB</strong> Free.
             </div>
             <div>
-                <strong>Copyright</strong> Example Company &copy; 2014-2015
+                <strong>
+
+© Copyright 2017.
+</strong> All Rights Reserved.
             </div>
         </div>
 
