@@ -6,15 +6,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>overzicht_freelancer</title>
+    <title>Project Leider</title>
 
     <meta name="keywords" content="HTML5 Template" />
     <meta name="description" content="Porto - Responsive HTML5 Template">
     <meta name="author" content="okler.net">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="img/apple-touch-icon1.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon1.png">
 
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -52,7 +52,7 @@
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
 
-  
+
   </head>
   <body>
       <?php

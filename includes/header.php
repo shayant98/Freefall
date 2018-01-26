@@ -7,7 +7,7 @@ session_start();
 						<div class="header-row">
 							<div class="header-column">
 								<div class="header-logo">
-									<a href="index.php">
+									<a href="overzicht_freelancer.php">
 										<img alt="Freefall" width="111" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="img/logo_freefall.png">
 									</a>
 								</div>
@@ -36,7 +36,6 @@ session_start();
 												    <li class="no-active">
                               <a class="btn btn-3d btn-primary mr-xs mb-sm" href="projecten_overzicht.php">Kies een Project</a>
 
-                              </form>
 													</li>
 
 
