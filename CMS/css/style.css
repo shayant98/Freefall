@@ -603,7 +603,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
   color: #1c84c6;
 }
 .btn-info.btn-outline {
-  color: #23c6c8;
+  color: #0099ff;
 }
 .btn-warning.btn-outline {
   color: #f8ac59;
@@ -701,8 +701,8 @@ fieldset[disabled] .btn-success.active {
   border-color: #1f90d8;
 }
 .btn-info {
-  background-color: #23c6c8;
-  border-color: #23c6c8;
+  background-color: #0099ff;
+  border-color: #0099ff;
   color: #FFFFFF;
 }
 .btn-info:hover,
@@ -1081,7 +1081,7 @@ button.dim:active:before {
 }
 .label-info,
 .badge-info {
-  background-color: #23c6c8;
+  background-color: #0099ff;
   color: #FFFFFF;
 }
 .label-inverse,
@@ -2451,7 +2451,7 @@ label.error {
   background-color: #ed5565;
 }
 .toast-info {
-  background-color: #23c6c8;
+  background-color: #0099ff;
 }
 .toast-warning {
   background-color: #f8ac59;
@@ -3855,7 +3855,7 @@ table.table-mail tr td {
   color: #ffffff;
 }
 .lazur-bg {
-  background-color: #23c6c8;
+  background-color: #0099ff;
   color: #ffffff;
 }
 .yellow-bg {
@@ -3885,11 +3885,11 @@ table.table-mail tr td {
   color: #ffffff;
 }
 .panel-info {
-  border-color: #23c6c8;
+  border-color: #0099ff;
 }
 .panel-info > .panel-heading {
-  background-color: #23c6c8;
-  border-color: #23c6c8;
+  background-color: #0099ff;
+  border-color: #0099ff;
   color: #ffffff;
 }
 .panel-warning {
@@ -3931,7 +3931,7 @@ table.table-mail tr td {
   background-color: #1c84c6;
 }
 .progress-bar-info {
-  background-color: #23c6c8;
+  background-color: #0099ff;
 }
 .progress-bar-warning {
   background-color: #f8ac59;
@@ -3960,7 +3960,7 @@ table.table-mail tr td {
   color: #1c84c6;
 }
 .text-info {
-  color: #23c6c8;
+  color: #0099ff;
 }
 .text-warning {
   color: #f8ac59;
@@ -4688,7 +4688,7 @@ ul.notes li div {
   color: #1c84c6;
 }
 .category-list li a .text-info {
-  color: #23c6c8;
+  color: #0099ff;
 }
 .category-list li a .text-danger {
   color: #EF5352;
@@ -7563,10 +7563,10 @@ body.skin-2 {
   margin-right: 25px;
 }
 .skin-2 .spin-icon {
-  background: #23c6c8 !important;
+  background: #0099ff !important;
 }
 .skin-2 .nav-header {
-  background: #23c6c8;
+  background: #0099ff;
   background: url('patterns/header-profile-skin-2.png');
 }
 .skin-2.mini-navbar .nav-second-level {
@@ -7607,8 +7607,8 @@ body.skin-2 {
   background: #213a53;
 }
 .skin-2 .navbar-minimalize {
-  background: #23c6c8;
-  border-color: #23c6c8;
+  background: #0099ff;
+  border-color: #0099ff;
 }
 .skin-2 .border-bottom {
   border-bottom: none !important;
