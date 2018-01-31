@@ -69,7 +69,7 @@ session_start();
                       <td><?php echo $owner ?></td>
                       <td><?php echo $price ?></td>
                       <td><?php echo $deadline ?></td>
-                      <td>  <a href="#" class="btn btn-danger">Verwijderen</a></td>
+                      <td>  <a href="api/delete_project.php?id=<?php  echo $id; ?>" class="btn btn-danger">Verwijderen</a></td>
                         <?php
                       } ?>
 
