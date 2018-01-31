@@ -1,3 +1,8 @@
+<?php
+session_start();
+  include 'api/dbc.php';
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -306,7 +311,7 @@
 
 
                 <li>
-                    <a href="login.html">
+                    <a href="api/logout_process.php">
                         <i class="fa fa-sign-out"></i> Log uit
                     </a>
                 </li>
