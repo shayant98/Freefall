@@ -95,6 +95,73 @@ session_start();
               </div>
           </div>
 
+<!-- MODAL - gebruikers toevoegen  -->
+                            <a data-toggle="modal" class="btn btn-primary" href="#modal-form">Toevoegen</a>
+
+                            <div id="modal-form" class="modal fade" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <div class="col-sm-12"><h3 class="m-t-none m-b">Gebruikers Toevoegen</h3>
+
+                                                    <p>Voer de gebruikers gegevens in</p>
+
+                                                    <form role="form">
+                                                        <div class="form-group"><label>Gebruikersnaam</label> <input type="email"  class="form-control"></div>
+                                                        <div class="form-group"><label>Wachtwoord</label> <input type="password"  class="form-control"></div>
+                                                        <div class="form-group"><label>Functie</label> <input type="function"  class="form-control"></div>
+                                                        <div class="form-group"><label>Naam</label> <input type="surname"  class="form-control"></div>
+                                                        <div class="form-group"><label>Voornaam</label> <input type="name"  class="form-control"></div>
+                                                        <div class="form-group"><label>ID</label> <input type="id"  class="form-control"></div>
+                                                        <div class="form-group"><label>Functies</label> <input type="functions"  class="form-control"></div>
+                                                        <div>
+                                                            <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Registreer</strong></button>
+
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--MODAL - gebruikers bijwerken -->
+<a data-toggle="modal" class="btn btn-primary" href="#modal-form2">Bijwerken</a>
+                            <div id="modal-form2" class="modal fade" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <div class="col-sm-12"><h3 class="m-t-none m-b">Gebruikers Toevoegen</h3>
+
+                                                    <p>Voer de gebruikers gegevens in</p>
+
+                                                    <form role="form">
+                                                        <div class="form-group"><label>Gebruikersnaam</label> <input type="email"  class="form-control"></div>
+                                                        <div class="form-group"><label>Wachtwoord</label> <input type="password"  class="form-control"></div>
+                                                        <div class="form-group"><label>Functie</label> <input type="function"  class="form-control"></div>
+                                                        <div class="form-group"><label>Naam</label> <input type="surname"  class="form-control"></div>
+                                                        <div class="form-group"><label>Voornaam</label> <input type="name"  class="form-control"></div>
+                                                        <div class="form-group"><label>ID</label> <input type="id"  class="form-control"></div>
+                                                        <div class="form-group"><label>Functies</label> <input type="functions"  class="form-control"></div>
+                                                        <div>
+                                                            <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Registreer</strong></button>
+
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
         </div>
 
 

@@ -26,7 +26,7 @@
 
     <div class="middle-box text-center loginscreen animated fadeInDown">
         <div >
-          
+
             <div class="card">
 <div class="card-block">
             <div class="text-center">
