@@ -92,9 +92,18 @@
 						<div class="sort-destination-loader sort-destination-loader-showing">
 							<ul class="portfolio-list sort-destination popup-gallery-ajax" data-sort-id="portfolio">
                 <?php
-                $sql = mysqli_query($conn, "SELECT * FROM fr_projects  INNER JOIN fr_users ON fr_projects.project_owner = fr_users.id WHERE status =0 ");
+                $sql = mysqli_query($conn, "SELECT fr_projects.id as proj_id,
+                                                  fr_projects.project_name,
+                                                  fr_projects.project_disc,
+                                                  fr_projects.project_price,
+                                                  fr_projects.project_tags,
+                                                  fr_projects.project_deadline
+
+                                                  FROM fr_projects
+                                                  INNER JOIN fr_users ON fr_projects.project_owner = fr_users.id
+                                                  WHERE status =0 ");
                   while ($row = mysqli_fetch_array($sql)) {
-                    $id = $row['id'];
+                    $proj_id = $row['proj_id'];
                     $name = $row['project_name'];
                     $disc = $row['project_disc'];
                     $u_name = $row['name'];
@@ -102,14 +111,14 @@
                     $price = $row['project_price'];
                     $deadline = $row['project_deadline'];
                     ?>
-                    <li data-id=<?php echo $id ?>  class="  col-md-3 col-sm-6 col-xs-12 isotope-item <?php echo $row['project_tags']; ?> project">
+                    <li data-id=<?php echo $proj_id ?>  class="  col-md-3 col-sm-6 col-xs-12 isotope-item <?php echo $row['project_tags']; ?> project">
                       <span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
                         <span class="thumb-info-wrapper">
                           <a   href="project_overzicht.php" data-ajax-on-modal>
                             <img src="img/team/team-1.jpg" class="img-responsive" alt="">
                             <span class="thumb-info-title">
                               <span   class=" thumb-info-inner"><?php echo $name ?></span>
-                              <span class="thumb-info-type"><?php echo $id ?></span>
+                              <span class="thumb-info-type"><?php echo $proj_id ?></span>
                             </span>
                           </a>
                         </span>

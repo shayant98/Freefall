@@ -1,12 +1,19 @@
 <?php
+session_start();
+include 'api/dbc.php';
+$id = $_POST['id'];
 
-	$name = "hello";
+$sql = mysqli_query($conn, "SELECT * FROM fr_projects WHERE id = $id");
+while ($row = mysqli_fetch_array($sql)) {
+	$proj_id = $row['id'];
+	$name = $row['project_name'];
+	$disc = $row['project_disc'];
+	$u_name = $row['name'];
+	$surname = $row['surname'];
+	$price = $row['project_price'];
+	$deadline = $row['project_deadline'];
+}
 
-	if(isset($_POST['id'])){
-		$userResponsePHP = 'number';
-	}else {
-		$userResponsePHP = 'string';
-	}
 
 
 
@@ -21,7 +28,7 @@
 						<a href="#" data-ajax-portfolio-close data-tooltip data-original-title="Close"><i class="fa fa-th"></i></a>
 					</div>
 					<div class="col-md-10 center">
-						<h2 class="mb-none"><?php echo $_POST['id'] ?></h2>
+						<h2 class="mb-none"><?php echo $name ?></h2>
 					</div>
 					<div class="portfolio-nav col-md-1">
 						<a href="#" data-ajax-portfolio-prev class="portfolio-nav-prev" data-tooltip data-original-title="Previous"><i class="fa fa-chevron-left"></i></a>
