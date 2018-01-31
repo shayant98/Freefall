@@ -32,6 +32,8 @@
 
         <div class="wrapper wrapper-content animated fadeInRight">
 
+<form >
+
 
             <div class="row">
                 <div class="col-lg-12">
@@ -90,6 +92,7 @@
                     </div>
                 </div>
             </div>
+            </form>
         </div>
 
 
