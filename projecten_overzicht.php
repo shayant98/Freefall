@@ -9,7 +9,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title>Project Leider</title>
+		<title>Project Overzicht</title>
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -39,6 +39,8 @@
 		<link rel="stylesheet" href="css/theme-elements.css">
 		<link rel="stylesheet" href="css/theme-blog.css">
 		<link rel="stylesheet" href="css/theme-shop.css">
+    <link href="CMS/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
 
 		<!-- Skin CSS -->
 		<link rel="stylesheet" href="css/skins/default.css">
@@ -165,6 +167,8 @@
 		<script src="vendor/owl.carousel/owl.carousel.min.js"></script>
 		<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 		<script src="vendor/vide/vide.min.js"></script>
+    <script src="CMS/js/plugins/sweetalert/sweetalert.min.js"></script>
+
 
 		<!-- Theme Base, Components and Settings -->
 		<script src="js/theme.js"></script>
@@ -208,7 +212,21 @@ $( document ).ready(function() {
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
 });
+$('.btnAcceptProject').click(function () {
+swal({
+title: "Bent u Zeker",
+text: "U zult het project niet meer terug krijgen!",
+type: "warning",
+showCancelButton: true,
+confirmButtonColor: "#DD6B55",
+confirmButtonText: "Verwijderen",
+closeOnConfirm: true
+}, function () {
+  window.location.href = 'api/delete_project.php?id=<?php echo $id; ?>';
+});
+});
 </script>
+a\
 
 	</body>
 </html>

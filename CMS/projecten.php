@@ -18,6 +18,9 @@ session_start();
     <!-- Morris -->
     <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
 
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -69,7 +72,7 @@ session_start();
                       <td><?php echo $owner ?></td>
                       <td><?php echo $price ?></td>
                       <td><?php echo $deadline ?></td>
-                      <td>  <a href="api/delete_project.php?id=<?php  echo $id; ?>" class="btn btn-danger">Verwijderen</a></td>
+                      <td><a href="#" class="btn btn-danger btnDeleteProject">Verwijderen</a></td>
                         <?php
                       } ?>
 
@@ -138,6 +141,8 @@ session_start();
 
     <!-- ChartJS-->
     <script src="js/plugins/chartJs/Chart.min.js"></script>
+    <!-- Sweet alert -->
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
 
     <!-- <script>
         $(document).ready(function() {
@@ -285,6 +290,19 @@ session_start();
                 "New row" ] );
 
         }
+        $('.btnDeleteProject').click(function () {
+    swal({
+        title: "Bent u Zeker",
+        text: "U zult het project niet meer terug krijgen!",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#DD6B55",
+        confirmButtonText: "Verwijderen",
+        closeOnConfirm: true
+    }, function () {
+          window.location.href = 'api/delete_project.php?id=<?php echo $id; ?>';
+    });
+});
     </script>
 </body>
 </html>
