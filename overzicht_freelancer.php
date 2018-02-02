@@ -1,3 +1,12 @@
+<?php
+session_start();
+  include 'api/dbc.php';
+  $date = date("Y-m-d");
+
+  $sql = mysqli_query($conn, "SELECT * FROM fr_posts WHERE pst_date = '$date'");
+    while ($row = mysqli_fetch_array($sql)) {
+      $post =  $row['post'];}
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -163,7 +172,9 @@
                     <hr>
                     <div class="row">
                       <div class="col-md-12">
-                        <p>System updates hier!</p>
+                        <h3 class="text-center">
+                        <?php echo $post ?>
+                      </h3>
                       </div>
                     </div>
                   </div>

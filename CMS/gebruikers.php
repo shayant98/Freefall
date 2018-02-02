@@ -72,7 +72,8 @@ session_start();
                     <td><?php echo $surname ?></td>
                     <td><?php echo $email ?></td>
                     <td><?php echo $username ?></td>
-                    <td><a href="#" class="btn btn-danger btnDeleteUsers">Verwijderen</a></td>
+                    <td><a href="#" class="btn btn-danger btnDeleteUsers">Verwijderen</a>
+                    <a data-toggle="modal" class="btn btn-success" href="#modal-form2">Bijwerken</a></td>
                       <?php
                     } ?>
 
@@ -108,15 +109,20 @@ session_start();
 
                                                     <p>Voer de gebruikers gegevens in</p>
 
-                                                    <form role="form">
-                                                        <div class="form-group"><label>Gebruikersnaam</label> <input type="email"  class="form-control"></div>
-                                                        <div class="form-group"><label>Wachtwoord</label> <input type="password"  class="form-control"></div>
-                                                        <div class="form-group"><label>Functie</label> <input type="function"  class="form-control"></div>
-                                                        <div class="form-group"><label>Naam</label> <input type="surname"  class="form-control"></div>
-                                                        <div class="form-group"><label>Voornaam</label> <input type="name"  class="form-control"></div>
-                                                        <div class="form-group"><label>ID</label> <input type="id"  class="form-control"></div>
-                                                        <div class="form-group"><label>Functies</label> <input type="functions"  class="form-control"></div>
-                                                        <div>
+                                                    <form action="api/insertUser.php" method="post">
+
+                                                        <div class="form-group">
+                                                          <label>Naam</label> <input name="surname"  class="form-control"></div>
+                                                        <div class="form-group">
+                                                          <label>Voornaam</label> <input name="name"  class="form-control"></div>
+                                                          <div class="form-group">
+                                                            <label>Email Adress</label> <input type="email" name="email"  class="form-control"></div>
+                                                            <div class="form-group">
+                                                              <label>Gebruikersnaam</label> <input name="username"  class="form-control"></div>
+                                                          <div class="form-group">
+                                                            <label>Wachtwoord</label> <input name="password"  class="form-control"></div>
+                                                          <div class="form-group">
+                                                            <label>Functie</label> <input name="function"  class="form-control"></div>
                                                             <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Registreer</strong></button>
 
                                                         </div>
@@ -130,7 +136,6 @@ session_start();
                             </div>
 
                             <!--MODAL - gebruikers bijwerken -->
-<a data-toggle="modal" class="btn btn-primary" href="#modal-form2">Bijwerken</a>
                             <div id="modal-form2" class="modal fade" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
