@@ -9,15 +9,15 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title>Porto - Responsive HTML5 Template 5.7.2</title>
+		<title>Maak een project</title>
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
 		<meta name="author" content="okler.net">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="img/apple-touch-icon1.png" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="img/apple-touch-icon1.png">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -77,7 +77,7 @@ include "includes/header2.php";
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<h1>Nieuwe Project</h1>
+				<h1>Nieuw Project</h1>
 			</div>
 		</div>
 	</div>
@@ -92,44 +92,48 @@ include "includes/header2.php";
 					<label>Project Naam</label>
 						<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="project_name" id="name" required>
 				</div>
-				<div class="col-md-8">
-					<label for="id_label_single">
-							Vereiste vaardigheden
-<br>
-  <select class="js-example-basic-single  form-control" id="id_label_single">
-  	<option value="website">Website</option>
-		<option value="logo">Logo</option>
-  </select>
-</label>
 
-
-				</div>
-
-			</div>
-		</div>
-		<div class="row">
-			<div class="form-group">
 				<div class="col-md-4">
 					<label>Budget</label>
 					<input type="number" value="" class="form-control" name="project_price" required>
 				</div>
 
-				<div class="col-md-8">
-					<label>Project omschrijving</label>
-					<textarea maxlength="5000" rows="10" class="form-control" name="project_disc" required></textarea>
+				<div class="col-md-4">
+				<label for="id_label_single">
+						Vereiste vaardigheden</label>
+				<select class="js-example-basic-single  form-control" id="id_label_single">
+				<option value="website">Website</option>
+				<option value="logo">Logo</option>
+				</select>
+
 				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="form-group">
+
+				</div>
 
 			</div>
-		</div>
-		<div class="row">
-<div class="col-md-10">
 
+
+
+
+<div class="row">
+
+<div class="col-md-12">
+	<label>Project omschrijving</label>
+	<textarea maxlength="5000" rows="5" class="form-control" name="project_disc" required></textarea>
 </div>
-			<div class="col-md-1">
+</div>
+
+
+
+
+<br>
+
+		<div class="row">
+<!-- <div class="col-md-10">
+
+</div> -->
+
+			<div class="col-md-10">
 				<input type="submit" name="submitProject" value="Maak Project" class="btn btn-primary btn-lg mb-xlg" data-loading-text="Loading...">
 			</div>
 
