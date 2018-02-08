@@ -122,7 +122,11 @@ session_start();
                                                           <div class="form-group">
                                                             <label>Wachtwoord</label> <input name="password"  class="form-control"></div>
                                                           <div class="form-group">
-                                                            <label>Functie</label> <input name="function"  class="form-control"></div>
+                                                            <label>Functie</label>
+                                                            <select class="" name="function">
+                                                              <option value="1">Opdrachtgever</option>
+                                                              <option value="2">Freelancer</option>
+                                                            </select>
                                                             <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Registreer</strong></button>
 
                                                         </div>

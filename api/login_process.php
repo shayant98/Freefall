@@ -36,6 +36,7 @@ session_start();
             $_SESSION['u_username'] = $row['username'];
             $_SESSION['u_salary'] = $row['salary'];
             $_SESSION['u_level'] = $row['access_level'];
+            $_SESSION['u_profile'] = $row['image'];
 
             if ($row['access_level'] == 1) {
               header("Location: ../overzicht_opdrachtgever.php");
