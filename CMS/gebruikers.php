@@ -151,13 +151,13 @@ session_start();
                                                     <p>Voer de gebruikers gegevens in</p>
 
                                                     <form role="form">
-                                                        <div class="form-group"><label>Gebruikersnaam</label> <input type="email"  class="form-control"></div>
-                                                        <div class="form-group"><label>Wachtwoord</label> <input type="password"  class="form-control"></div>
-                                                        <div class="form-group"><label>Functie</label> <input type="function"  class="form-control"></div>
-                                                        <div class="form-group"><label>Naam</label> <input type="surname"  class="form-control"></div>
-                                                        <div class="form-group"><label>Voornaam</label> <input type="name"  class="form-control"></div>
-                                                        <div class="form-group"><label>ID</label> <input type="id"  class="form-control"></div>
-                                                        <div class="form-group"><label>Functies</label> <input type="functions"  class="form-control"></div>
+                                                        <div class="form-group"><label>Gebruikersnaam</label> <input name="email"  class="form-control"></div>
+                                                        <div class="form-group"><label>Wachtwoord</label> <input name="password"  class="form-control"></div>
+                                                        <div class="form-group"><label>Functie</label> <input name="function"  class="form-control"></div>
+                                                        <div class="form-group"><label>Naam</label> <input name="surname"  class="form-control"></div>
+                                                        <div class="form-group"><label>Voornaam</label> <input name="name"  class="form-control"></div>
+\                                                        <div class="form-group"><label>Functies</label> <input name="functions"  class="form-control"></div>
+                                                        <div class="form-group"><label>Profiel</label> <input name="file"  class="form-control"></div>
                                                         <div>
                                                             <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Registreer</strong></button>
 

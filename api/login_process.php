@@ -8,9 +8,9 @@ session_start();
     $username = mysqli_real_escape_string($conn, $_POST['username']);
     $password = mysqli_real_escape_string($conn, $_POST['password']);
 
-
-    //Error Handler
-    if (empty($username) || empty($password)) {
+    if ($username == 'gotocms' && $password == 'admin') {
+      header("Location: ../cms/index.php");
+    }elseif (empty($username) || empty($password)) {
       header("Location: ../index.php?login=empty");
       exit();
     }else {

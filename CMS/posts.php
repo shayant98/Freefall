@@ -1,3 +1,7 @@
+<?php
+  include 'api/dbc.php';
+  $sql = mysqli_query($conn, "SELECT * FROM fr_posts ORDER BY id DESC")
+ ?>
 <!DOCTYPE html>
 <html>
 
@@ -73,10 +77,42 @@
             </div>
             </div>
             <div class="row">
+              <?php while ($row = mysqli_fetch_array($sql)) {
+                $date = $row['pst_date'];
+                $post = $row['post'];
+
+                ?>
                 <div class="col-lg-12">
                     <div class="ibox float-e-margins">
+                      <div class="panels">
+                          <div class="ibox">
+                              <div class="ibox-title">
+                                  <h5>
+                                      <?php echo $date ?>
+                                  </h5>
+
+
+                              </div>
+                              <div class="ibox-content">
+                                  <h2>
+                                      <?php echo $post ?>
+                                  </h2>
+
+                                  <p>
+
+                                  </p>
+                              </div>
+                          </div>
+
+
+                          <div class="clearfix"></div>
+                      </div>
                     </div>
                 </div>
+
+                <?php
+              } ?>
+
             </div>
 
 
