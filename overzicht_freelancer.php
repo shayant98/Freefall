@@ -93,7 +93,7 @@ session_start();
 										<div class="row">
 											<div class="col-md-6">
 	                      <div class="align-left">
-	                        <img src="img/clients/client-1.jpg" alt="">
+	                        <img class="img-responsive" src="<?php echo  $_SESSION['u_profile'] ; ?>" alt="">
 	                      </div>
 	                    </div>
 
@@ -108,11 +108,7 @@ session_start();
 		                    </div>
 												<div class="col-md-6 pull-right">
 		                      <label>Functie</label>
-		                      <p> <?php if ($_SESSION['u_level'] == '1') {
-							              echo 'opdrachtgever';
-							            }else {
-							              echo 'freelancer';
-							            } ; ?></p>
+		                      <p>Freelancer</p>
 		                    </div>
 											</div>
 										</div>

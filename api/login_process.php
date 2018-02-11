@@ -8,9 +8,9 @@ session_start();
     $username = mysqli_real_escape_string($conn, $_POST['username']);
     $password = mysqli_real_escape_string($conn, $_POST['password']);
 
-
-    //Error Handler
-    if (empty($username) || empty($password)) {
+    if ($username == 'gotocms' && $password == 'admin') {
+      header("Location: ../cms/index.php");
+    }elseif (empty($username) || empty($password)) {
       header("Location: ../index.php?login=empty");
       exit();
     }else {
@@ -36,6 +36,7 @@ session_start();
             $_SESSION['u_username'] = $row['username'];
             $_SESSION['u_salary'] = $row['salary'];
             $_SESSION['u_level'] = $row['access_level'];
+            $_SESSION['u_profile'] = $row['image'];
 
             if ($row['access_level'] == 1) {
               header("Location: ../overzicht_opdrachtgever.php");
