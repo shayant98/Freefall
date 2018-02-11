@@ -119,7 +119,7 @@ include "includes/header2.php";
 
 <div class="col-md-12">
 	<label>Project omschrijving</label>
-	<textarea maxlength="5000" rows="5" class="form-control" name="project_disc" required></textarea>
+	<textarea maxlength="5000" rows="14" class="form-control" name="project_disc" required></textarea>
 </div>
 </div>
 
