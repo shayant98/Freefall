@@ -82,7 +82,7 @@
 				<!-- <div class="col-md-">
 				</div> -->
 				<div class="col-md-1">
-					<button type="button" class="btn btn-primary mb xl" data-toggle="modal" data-target="#myModal">Contact</button>
+					<button type="button" class="btn btn-primary mb xl" data-toggle="modal" data-target="#myModal">Technische Dienst</button>
 				</div>
 
 
@@ -95,20 +95,17 @@
 			    <div class="modal-content">
 			      <div class="modal-header">
 			        <button type="button" class="close" data-dismiss="modal">&times;</button>
-			        <h4 class="modal-title">Contact ons.</h4>
+			        <h4 class="modal-title" style="color: #000;">problemen?</h4>
 			      </div>
 			      <div class="modal-body">
 			        <!-- <p>Some text in the modal.</p> -->
-							<label>Naam</label>
-							<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required>
+							<form class="" action="api/problemAdd.php?id=<?php echo $_SESSION['u_id']  ?>" method="post">
+								<label>Beschrijf het probleem so duidelijk mogelijk</label>
+								<textarea maxlength="5000" data-msg-required="Beschrijf AUB uw probleem" rows="4" class="form-control" name="problem" id="message" required></textarea>
+									<br>
+									<button type="submit" name="submit" class="btn btn-primary">Versturen</button>
+							</form>
 
-							<label>Email</label>
-							<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
-
-							<label>Bericht</label>
-							<textarea maxlength="5000" data-msg-required="Please enter your message." rows="4" class="form-control" name="message" id="message" required></textarea>
-								<br>
-								<input type="submit" value="Versturen" class="btn btn-primary mb-xl" data-loading-text="Loading...">
 
 					  </div>
 			      <div class="modal-footer">

@@ -48,25 +48,28 @@ session_start();
                       $sql = mysqli_query($conn, "SELECT * FROM fr_users ");
                         $num_rows = mysqli_num_rows($sql);
                          ?>
-                      <h1 class="font-bold no-margins">
-                          <?php echo $num_rows; ?> Gergistreerde Gebruikers
-                      </h1>
+                      <h2 class="font-bold no-margins">
+                        <?php echo $num_rows; ?> Gergistreerde Gebruikers
+                      </h2>
                   </div>
                   <div class="flot-chart">
                       <div class="flot-chart-content" id="flot-chart2"></div>
                   </div>
               </div>
           </div>
-
-          <div class="col-lg-4">
+          <div class="col-lg-4 pull-right">
               <div class="widget lazur-bg no-padding">
                   <div class="p-m">
-                      <h1 class="m-xs">Online Gebruikers</h1>
+                      <h1 class="m-xs">Openstaande Projecten</h1>
+                      <?php
+                        $sql = mysqli_query($conn, "SELECT * FROM fr_projects WHERE status = '0'");
+                        $num_rows = mysqli_num_rows($sql);
 
-                      <h3 class="font-bold no-margins">
-                          Monthly income
-                      </h3>
-                      <medium>Income form project Beta.</medium>
+                       ?>
+                      <h2 class="font-bold no-margins">
+                          <?php echo $num_rows; ?> Openstaande Projecten
+                      </h2>
+
                   </div>
                   <div class="flot-chart">
                       <div class="flot-chart-content" id="flot-chart2"></div>
@@ -74,7 +77,8 @@ session_start();
               </div>
           </div>
 
-          <div class="col-lg-4">
+
+          <div class="col-lg-4 ">
               <div class="widget lazur-bg no-padding">
                   <div class="p-m">
                       <h1 class="m-xs">Actieve Projecten</h1>
@@ -83,9 +87,9 @@ session_start();
                         $num_rows = mysqli_num_rows($sql);
 
                        ?>
-                      <h1 class="font-bold no-margins">
+                      <h2 class="font-bold no-margins">
                           <?php echo $num_rows; ?> Active Projects
-                      </h1>
+                      </h2>
 
                   </div>
                   <div class="flot-chart">

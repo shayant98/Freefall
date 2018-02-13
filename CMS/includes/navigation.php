@@ -36,7 +36,7 @@
                 <a href="gebruikers.php"><i class="fa fa-user"></i> <span class="nav-label">Gebruikers</span></a>
             </li>
             <li>
-                <a href="gebruikers.php"><i class="fa fa-medkit"></i> <span class="nav-label">Trouble</span></a>
+                <a href="trouble.php"><i class="fa fa-medkit"></i> <span class="nav-label">Trouble</span></a>
             </li>
     </div>
 </nav>
