@@ -63,10 +63,12 @@
                             </a>
                         </div>
                     </div>
+
                     <div class="ibox-content">
 
                         <form action="api/insertPost.php" method="POST">
                           <textarea name="post" data-provide="markdown" rows="10" ></textarea>
+                          <br>
                             <button type="submit" name="btnPost" class="btn btn-w-m btn-primary btn-lg">Post</button>
 
 
