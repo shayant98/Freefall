@@ -78,7 +78,7 @@ while ($row = mysqli_fetch_array($ownerQuery)) {
 			<h5 class="mt-sm">Project Description</h5>
 			<p class="mt-xlg btnAcceptProject"><?php echo  $proj_disc ?></p>
 
-			<a href="api/acceptProject.php?id=<?php echo $id ?>" class="btn btn-primary btn-icon"><i class="fa fa-external-link"></i>Project Accepteren</a>
+			<a href="#" class="btn btn-primary btn-icon btnAcceptProject"><i class="fa fa-external-link"></i>Project Accepteren</a>
 
 			<ul class="portfolio-details">
 				<li>
@@ -99,3 +99,21 @@ while ($row = mysqli_fetch_array($ownerQuery)) {
 		</div>
 	</div>
 </div>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+$('.btnAcceptProject').click(function () {
+swal({
+title: "Bent u Zeker",
+text: "",
+type: "success",
+showCancelButton: true,
+confirmButtonColor: "#28a745",
+confirmButtonText: "Accepteren",
+closeOnConfirm: true
+}, function () {
+  window.location.href = 'api/acceptProject.php?id=<?php echo $id ?>';
+});
+});
+</script>
