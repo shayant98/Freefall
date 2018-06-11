@@ -98,7 +98,7 @@ body  {
 														<div class="form-group">
 															<div class="col-md-12">
 																<label>Gebruikersnaam</label>
-																<input type="text" name="username" class="form-control input-lg" placeholder="Email Address">
+																<input type="text" name="username" class="form-control input-lg" placeholder="Gebruikersnaam">
 															</div>
 														</div>
 													</div>

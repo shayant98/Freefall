@@ -51,6 +51,8 @@
 		<!-- Head Libs -->
 		<script src="vendor/modernizr/modernizr.min.js"></script>
 
+    <!-- Sweet Alert -->
+    <link href="CMS/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
 	</head>
 	<body>
 
@@ -182,6 +184,9 @@
 		<!-- Examples -->
 		<script src="js/examples/examples.portfolio.js"></script>
 
+    <!-- Sweet alert -->
+    <script src="CMS/js/plugins/sweetalert/sweetalert.min.js"></script>
+
 		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -208,25 +213,8 @@ $( document ).ready(function() {
    });
     });
 </script>
-<script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-});
-$('.btnAcceptProject').click(function () {
-swal({
-title: "Bent u Zeker",
-text: "U zult het project niet meer terug krijgen!",
-type: "warning",
-showCancelButton: true,
-confirmButtonColor: "#DD6B55",
-confirmButtonText: "Verwijderen",
-closeOnConfirm: true
-}, function () {
-  window.location.href = 'api/delete_project.php?id=<?php echo $id; ?>';
-});
-});
-</script>
-a\
+
+
 
 	</body>
 </html>
